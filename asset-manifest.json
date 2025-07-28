@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sistema-biblioteca/static/css/main.e6c4d5ba.css",
+    "main.js": "/sistema-biblioteca/static/js/main.d45aff04.js",
+    "index.html": "/sistema-biblioteca/index.html",
+    "main.e6c4d5ba.css.map": "/sistema-biblioteca/static/css/main.e6c4d5ba.css.map",
+    "main.d45aff04.js.map": "/sistema-biblioteca/static/js/main.d45aff04.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e6c4d5ba.css",
+    "static/js/main.d45aff04.js"
+  ]
+}
