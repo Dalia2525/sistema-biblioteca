@@ -1,0 +1,283 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    display: flex;
+    background-color: #f5f5f5;
+}
+
+.sidebar {
+      width: 250px;
+    background-color: #1f1f1f;
+    color: white;
+    padding: 20px;
+    min-height: 100%;
+}
+
+.sidebar .admin-profile {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.sidebar .admin-profile img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.sidebar .menu a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+
+.sidebar .menu a:hover {
+    background-color: #333;
+}
+
+.cerrar-sesion {
+    color: #ff5f5f !important;
+}
+
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header input[type="text"] {
+    width: 60%;
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
+
+.icons span {
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.bienvenida h1 {
+    background-color: #000;
+    color: white;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.estadisticas {
+    margin: 20px 0;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.uleam-logo img {
+    height: 80px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #468de4;
+    color: rgb(0, 0, 0);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 8px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.libros-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.libros-grid img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+.usuarios-activos ul {
+    list-style: none;
+    padding: 0;
+}
+
+.usuarios-activos li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ccc;
+}
+
+.usuarios-activos span {
+    color: gray;
+    font-size: 0.9em;
+}
+
+.libros-grid a.libro {
+    display: inline-block;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+    color: inherit;
+    width: 120px;
+    transition: transform 0.2s;
+}
+
+.libros-grid a.libro:hover {
+    transform: scale(1.05);
+}
+
+.libros-grid a.libro img {
+    width: 100px;
+    height: auto;
+    border-radius: 4px;
+}
+
+.libros-grid a.libro p {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color: #fff;
+}
+
+header input[type="text"] {
+    width: 300px;
+    padding: 8px 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    font-size: 14px;
+}
+
+header #btnBuscar {
+    padding: 8px 15px;
+    border: none;
+    background-color: #c9d1d1;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+header #btnBuscar:hover {
+    background-color: #205c5a;
+}
+
+.busqueda {
+    display: flex;
+    align-items: center;
+}
+
+/* Estilos para la tabla de libros */
+table#tablaLibros {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  font-family: Arial, sans-serif;
+}
+
+table#tablaLibros th, table#tablaLibros td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+table#tablaLibros th {
+  background-color: #000000;
+  color: white;
+  font-weight: bold;
+}
+
+table#tablaLibros tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+table#tablaLibros tr:hover {
+  background-color: #cce6ff;
+}
+
+/* Estilos para el formulario */
+#formAgregarLibro {
+  margin-top: 30px;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+}
+
+#formAgregarLibro h2 {
+  margin-bottom: 15px;
+  color: #004080;
+}
+
+#formAgregarLibro input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#formAgregarLibro button {
+  background-color: #004080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#formAgregarLibro button:hover {
+  background-color: #002d5c;
+}
+
+/* Estilo para la barra de búsqueda del panel principal con separación */
+.busqueda {
+  display: flex;
+  align-items: stretch;
+  gap: 8px; /* <-- espacio entre el input y el botón */
+  max-width: 600px;
+  flex: 1;
+}
+
+.busqueda input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.busqueda button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #004080;
+  color: white;
+  border: 1px solid #004080;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.busqueda button:hover {
+  background-color: #002d5c;
+}

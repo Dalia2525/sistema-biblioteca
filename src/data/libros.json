@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "titulo": "Programación en Python",
+    "autor": "Guido van Rossum",
+    "disponible": true
+  },
+  {
+    "id": 2,
+    "titulo": "Bases de Datos",
+    "autor": "Edgar Codd",
+    "disponible": true
+  },
+  {
+    "id": 3,
+    "titulo": "Redes de Computadoras",
+    "autor": "Andrew Tanenbaum",
+    "disponible": false
+  }
+]

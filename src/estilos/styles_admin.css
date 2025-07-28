@@ -1,0 +1,335 @@
+.boton-buscar {
+  background-color: #004080;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-left: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.boton-buscar:hover {
+  background-color: #002d5c;
+}
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+}
+
+.sidebar {
+  width: 250px;
+  background-color: #1f1f1f;
+  color: white;
+  padding: 20px;
+  min-height: 100vh;
+}
+
+.sidebar .admin-profile {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .admin-profile img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-bottom: 10px;
+}
+
+.sidebar .menu a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 10px;
+  margin: 5px 0;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.sidebar .menu a:hover {
+  background-color: #333;
+}
+
+.cerrar-sesion {
+  color: #ff5f5f !important;
+}
+
+.main-content {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+/* Encabezado */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 15px;
+}
+
+header input[type="text"] {
+  width: 300px;
+  padding: 8px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  font-size: 14px;
+}
+
+#btnBuscar {
+  padding: 8px 15px;
+  border: none;
+  background-color: #004080;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+#btnBuscar:hover {
+  background-color: #002d5c;
+}
+
+.busqueda {
+  display: flex;
+  align-items: stretch;
+  gap: 8px;
+  max-width: 600px;
+  flex: 1;
+}
+
+.busqueda input[type="text"] {
+  flex: 1;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.busqueda button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #004080;
+  color: white;
+  border: 1px solid #004080;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.busqueda button:hover {
+  background-color: #002d5c;
+}
+
+/* Tabla de libros */
+#tablaLibros {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+#tablaLibros th,
+#tablaLibros td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+#tablaLibros th {
+  background-color: #000;
+  color: white;
+}
+
+#tablaLibros tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#tablaLibros tr:hover {
+  background-color: #cce6ff;
+}
+
+/* Formulario de nuevo libro */
+#formAgregarLibro {
+  margin-top: 30px;
+  max-width: 600px;
+}
+
+#formAgregarLibro input {
+  width: calc(100% - 20px);
+  padding: 10px;
+  margin-bottom: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+#formAgregarLibro button {
+  background-color: #004080;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#formAgregarLibro button:hover {
+  background-color: #002d5c;
+}
+
+.boton-editar,
+.boton-eliminar {
+  padding: 4px 10px;
+  font-size: 14px;
+  border-radius: 6px;
+  background-color: #1f1d55;
+  color: white;
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  cursor: pointer;
+}
+
+.boton-editar i,
+.boton-eliminar i {
+  font-size: 14px;
+}
+
+.resumen-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.tarjeta-resumen {
+  background-color: #ffffff;
+  border-left: 6px solid #6c63ff;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 5px rgba(0,0,0,0.1);
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.tarjeta-resumen.pendiente { border-left-color: #141311de; }
+.tarjeta-resumen.aprobado { border-left-color: #6c63ff; }
+.tarjeta-resumen.devuelto { border-left-color: #141311de; }
+
+.lista-solicitudes {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.solicitud-item {
+  background: #fff;
+  padding: 12px 16px;
+  margin-bottom: 10px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.solicitud-item .acciones button {
+  margin-left: 8px;
+  padding: 6px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.solicitud-item .acciones button:hover {
+  opacity: 0.8;
+}
+
+.lista-solicitudes.simple li {
+  padding: 6px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.formulario-usuario {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.formulario-usuario input,
+.formulario-usuario select {
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.boton-agregar {
+  background-color: #2b2e5f;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-agregar:hover {
+  background-color: #45a049;
+}
+
+.boton-editar,
+.boton-eliminar {
+  padding: 6px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.boton-editar {
+  background-color: hsl(48, 13%, 8%);
+  color: #cfc4c4;
+  margin-right: 8px;
+}
+
+.boton-editar:hover {
+  background-color: #76727c;
+}
+
+.boton-eliminar {
+  background-color: #555555e8;
+  color: white;
+}
+
+.boton-eliminar:hover {
+  background-color: #555555e8;
+}
+
+.busqueda-container {
+  margin-bottom: 15px;
+}
+
+.input-busqueda {
+  width: 100%;
+  max-width: 400px;
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+}
+

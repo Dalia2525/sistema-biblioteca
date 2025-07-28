@@ -1,0 +1,153 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f6f8;
+  color: #333;
+}
+
+/* Layout general */
+.contenedor-estudiante {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar-estudiante {
+  width: 250px;
+  background-color: #1f1f1f;
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.sidebar-estudiante h2 {
+  margin-bottom: 20px;
+}
+
+.sidebar-estudiante button {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  text-align: left;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sidebar-estudiante button:hover {
+  background-color: #333;
+}
+
+.contenido-estudiante {
+  flex-grow: 1;
+  padding: 20px;
+  background-color: #fff;
+  overflow-y: auto;
+}
+
+/* Búsqueda */
+.inicio-estudiante {
+  padding: 2rem;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.barra-busqueda {
+  display: flex;
+  gap: 0.5rem;
+  margin-bottom: 2rem;
+}
+
+.barra-busqueda input {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+
+.barra-busqueda button {
+  padding: 0.5rem 1rem;
+  background-color: #1e90ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.barra-busqueda button:hover {
+  background-color: #187bcd;
+}
+
+/* Resultados */
+.resultados-libros {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.tarjeta-libro {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tarjeta-libro img {
+  width: 100px;
+  height: 150px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+  border-radius: 4px;
+}
+
+.tarjeta-libro h3 {
+  font-size: 1rem;
+  margin: 0.5rem 0;
+}
+
+.tarjeta-libro p {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+/* Botón de favorito */
+.tarjeta-libro button {
+  margin-top: auto;
+  padding: 0.5rem 1rem;
+  font-size: 0.9rem;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.tarjeta-libro button:hover {
+  background-color: #555;
+}
+
+/* Vista sin contenido */
+.placeholder-vista {
+  background-color: #f9f9f9;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+}
+
+.placeholder-vista h2 {
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+
+
