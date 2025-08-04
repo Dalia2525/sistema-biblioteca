@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/sistema-biblioteca/static/css/main.da5ea8ed.css",
-    "main.js": "/sistema-biblioteca/static/js/main.7a26a8ad.js",
+    "main.js": "/sistema-biblioteca/static/js/main.68e2b727.js",
     "index.html": "/sistema-biblioteca/index.html",
     "main.da5ea8ed.css.map": "/sistema-biblioteca/static/css/main.da5ea8ed.css.map",
-    "main.7a26a8ad.js.map": "/sistema-biblioteca/static/js/main.7a26a8ad.js.map"
+    "main.68e2b727.js.map": "/sistema-biblioteca/static/js/main.68e2b727.js.map"
   },
   "entrypoints": [
     "static/css/main.da5ea8ed.css",
-    "static/js/main.7a26a8ad.js"
+    "static/js/main.68e2b727.js"
   ]
 }
